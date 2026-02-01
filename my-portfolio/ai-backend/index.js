@@ -56,9 +56,9 @@ Projects:
 1. Finance Fusion – Finance management web app built with React and Flask.
 2. TrustPay – Blockchain-based escrow DApp using Ethereum smart contracts.
 `
-}
+},
 
-            { role: "user", content: userMessage },
+  { role: "user", content: userMessage },
           ],
         }),
       }
@@ -86,6 +86,8 @@ app.get("/", (req, res) => {
   res.send("AI Backend is running");
 });
 
-app.listen(5000, () => {
-  console.log("AI Backend running on http://localhost:5000");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`AI Backend running on port ${PORT}`);
 });
