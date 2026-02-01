@@ -1,0 +1,84 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/girl.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+
+  /* Prevent navbar overlap */
+  padding-top: 72px;
+}
+
+/* subtle overlay for readability (NOT white) */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.35) 40%,
+    rgba(0, 0, 0, 0.1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 700px;
+  padding-left: 10%;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: clamp(3rem, 5vw, 4.2rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero-content h1 span {
+  color: #6c7cff; /* brand accent */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-buttons .primary {
+  background: #6c7cff;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.6rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero-buttons .secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  padding: 0.9rem 1.6rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero-buttons button:hover {
+  transform: translateY(-2px);
+  transition: 0.2s ease;
+}

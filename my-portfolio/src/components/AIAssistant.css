@@ -1,0 +1,65 @@
+.ai-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 14px;
+  border-radius: 50%;
+  background: #6366f1;
+  color: white;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.ai-box {
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  width: 320px;
+  background: #0f172a;
+  color: white;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.ai-messages {
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.ai-msg {
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+}
+
+.ai-msg.user {
+  background: #1e293b;
+}
+
+.ai-msg.ai {
+  background: #6366f1;
+}
+
+.ai-input {
+  display: flex;
+  gap: 6px;
+}
+
+.ai-input input {
+  flex: 1;
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+}
+
+.ai-input button {
+  background: #6366f1;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+}

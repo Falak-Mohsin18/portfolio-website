@@ -1,0 +1,37 @@
+/* =========================
+   Global Reset
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   Global Theme
+========================= */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #0b1f29; /* neutral dark base */
+  color: white;
+}
+
+/* Light mode */
+body.light {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* Navbar light mode */
+body.light .navbar {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Links light mode */
+body.light a {
+  color: #0f172a;
+}

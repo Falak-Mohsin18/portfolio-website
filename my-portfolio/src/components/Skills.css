@@ -1,0 +1,118 @@
+/* ================================
+   SKILLS SECTION
+================================ */
+
+.skills {
+  position: relative;
+  padding: 120px 10%;
+  z-index: 2;
+
+  /* Brighter dark background */
+  background: radial-gradient(
+      circle at top left,
+      rgba(99, 102, 241, 0.15),
+      transparent 40%
+    ),
+    linear-gradient(
+      180deg,
+      #0b1f2a,
+      #081824
+    );
+
+  color: #f9fafb;
+}
+
+/* Accent glow behind section */
+.skills::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(99, 102, 241, 0.12),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+
+/* ================================
+   HEADING
+================================ */
+
+.skills h2 {
+  position: relative;
+  font-size: 2.6rem;
+  margin-bottom: 48px;
+
+  color: #ffffff;
+  letter-spacing: 0.5px;
+
+  text-shadow:
+    0 6px 25px rgba(99, 102, 241, 0.45);
+}
+
+
+/* ================================
+   GRID
+================================ */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 26px;
+}
+
+
+/* ================================
+   SKILL CARD
+================================ */
+
+.skill-card {
+  position: relative;
+
+  padding: 18px 24px;
+  text-align: center;
+  border-radius: 18px;
+
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  color: #e5e7eb;
+
+  background: linear-gradient(
+    145deg,
+    rgba(20, 45, 65, 0.95),
+    rgba(12, 30, 45, 0.95)
+  );
+
+  border: 1px solid rgba(99, 102, 241, 0.25);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.55),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+
+  transition: all 0.35s ease;
+}
+
+
+/* ================================
+   HOVER EFFECT
+================================ */
+
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.07);
+
+  background: linear-gradient(
+    145deg,
+    rgba(99, 102, 241, 0.55),
+    rgba(99, 102, 241, 0.25)
+  );
+
+  color: #ffffff;
+
+  box-shadow:
+    0 18px 50px rgba(99, 102, 241, 0.55),
+    inset 0 0 0 1px rgba(99, 102, 241, 0.45);
+}

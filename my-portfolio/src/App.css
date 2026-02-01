@@ -1,0 +1,19 @@
+/* Reset default Vite styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Allow full-width layouts */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Remove Vite demo leftovers */
+.logo,
+.card,
+.read-the-docs {
+  display: none;
+}

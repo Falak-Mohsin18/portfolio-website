@@ -1,0 +1,68 @@
+.contact {
+  padding: 100px 10%;
+  background: linear-gradient(180deg, #071e2a, #061822);
+  color: #ffffff;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.contact-text {
+  max-width: 520px;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+/* Card */
+.contact-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  border-radius: 26px;
+  padding: 32px;
+  width: fit-content;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+/* Items */
+.contact-item {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* FORCE WHITE LINKS */
+.contact-card .contact-item,
+.contact-card .contact-item:visited,
+.contact-card .contact-item:active {
+  color: #ffffff !important;
+}
+
+.contact-card .contact-item:hover {
+  color: #c7d2fe !important;
+}
+
+/* Copied badge */
+.copy-status {
+  position: absolute;
+  right: -70px;
+  font-size: 0.75rem;
+  background: #6366f1;
+  padding: 4px 8px;
+  border-radius: 999px;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}
+
+.copy-status.show {
+  opacity: 1;
+  transform: translateY(0);
+}
